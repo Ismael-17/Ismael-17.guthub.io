@@ -6,332 +6,133 @@
   <title>Ismael A. Seydi</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      font-family: 'Georgia', serif;
-      background: #0a0a0a;
-      color: #e8e8e8;
-    }
-
-    nav {
-      position: fixed;
-      top: 0; width: 100%;
-      background: rgba(10,10,10,0.95);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 18px 60px;
-      border-bottom: 1px solid #222;
-      z-index: 100;
-    }
-
-    nav .logo {
-      font-size: 1.1rem;
-      letter-spacing: 2px;
-      color: #c9a84c;
-      text-transform: uppercase;
-    }
-
-    nav a {
-      color: #aaa;
-      text-decoration: none;
-      margin-left: 32px;
-      font-family: 'Arial', sans-serif;
-      font-size: 0.82rem;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      transition: color 0.2s;
-    }
-
+    body { font-family: 'Georgia', serif; background: #0a0a0a; color: #e8e8e8; }
+    nav { position: fixed; top: 0; width: 100%; background: rgba(10,10,10,0.95); display: flex; justify-content: space-between; align-items: center; padding: 18px 60px; border-bottom: 1px solid #222; z-index: 100; }
+    nav .logo { font-size: 1.1rem; letter-spacing: 2px; color: #c9a84c; text-transform: uppercase; }
+    nav a { color: #aaa; text-decoration: none; margin-left: 32px; font-family: 'Arial', sans-serif; font-size: 0.82rem; letter-spacing: 1px; text-transform: uppercase; transition: color 0.2s; }
     nav a:hover { color: #c9a84c; }
-
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 120px 40px 80px;
-      background: linear-gradient(160deg, #0a0a0a 60%, #111 100%);
-    }
-
+    .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 120px 40px 80px; background: linear-gradient(160deg, #0a0a0a 60%, #111 100%); }
     .hero-inner { max-width: 700px; }
-
-    .headshot {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #c9a84c;
-      margin-bottom: 28px;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      letter-spacing: 3px;
-      color: #fff;
-      margin-bottom: 10px;
-    }
-
-    .hero .subtitle {
-      font-size: 1rem;
-      color: #c9a84c;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      font-family: Arial, sans-serif;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      color: #999;
-      line-height: 1.8;
-      font-size: 1rem;
-      margin-bottom: 36px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 13px 32px;
-      border: 1px solid #c9a84c;
-      color: #c9a84c;
-      text-decoration: none;
-      font-family: Arial, sans-serif;
-      font-size: 0.82rem;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin: 6px;
-      transition: background 0.2s, color 0.2s;
-    }
-
+    .headshot { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #c9a84c; margin-bottom: 28px; }
+    .hero h1 { font-size: 3rem; letter-spacing: 3px; color: #fff; margin-bottom: 10px; }
+    .hero .subtitle { font-size: 1rem; color: #c9a84c; letter-spacing: 2px; text-transform: uppercase; font-family: Arial, sans-serif; margin-bottom: 20px; }
+    .hero p { color: #999; line-height: 1.8; font-size: 1rem; margin-bottom: 36px; }
+    .btn { display: inline-block; padding: 13px 32px; border: 1px solid #c9a84c; color: #c9a84c; text-decoration: none; font-family: Arial, sans-serif; font-size: 0.82rem; letter-spacing: 2px; text-transform: uppercase; margin: 6px; transition: background 0.2s, color 0.2s; }
     .btn:hover { background: #c9a84c; color: #000; }
-
-    .btn-solid {
-      background: #c9a84c;
-      color: #000;
-    }
-
+    .btn-solid { background: #c9a84c; color: #000; }
     .btn-solid:hover { background: #e0bb6a; }
-
-    section {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 90px 40px;
-      border-top: 1px solid #1a1a1a;
-    }
-
-    .section-label {
-      font-family: Arial, sans-serif;
-      font-size: 0.75rem;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: #c9a84c;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      font-size: 2rem;
-      color: #fff;
-      margin-bottom: 40px;
-    }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-    }
-
-    .about-grid p {
-      color: #999;
-      line-height: 1.9;
-      font-size: 0.97rem;
-    }
-
+    section { max-width: 900px; margin: 0 auto; padding: 90px 40px; border-top: 1px solid #1a1a1a; }
+    .section-label { font-family: Arial, sans-serif; font-size: 0.75rem; letter-spacing: 3px; text-transform: uppercase; color: #c9a84c; margin-bottom: 10px; }
+    h2 { font-size: 2rem; color: #fff; margin-bottom: 40px; }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+    .about-grid p { color: #999; line-height: 1.9; font-size: 0.97rem; }
     .about-stats { display: flex; flex-direction: column; gap: 20px; }
-
     .stat { border-left: 2px solid #c9a84c; padding-left: 16px; }
-    .stat .num { font-size: 1.6rem; color: #fff; }
-    .stat .label {
-      font-family: Arial, sans-serif;
-      font-size: 0.78rem;
-      color: #666;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-
-    .projects-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 24px;
-    }
-
-    .project-card {
-      background: #111;
-      border: 1px solid #1e1e1e;
-      padding: 28px;
-      transition: border-color 0.2s;
-    }
-
+    .stat .num { font-size: 1.3rem; color: #fff; }
+    .stat .label { font-family: Arial, sans-serif; font-size: 0.78rem; color: #666; letter-spacing: 1px; text-transform: uppercase; }
+    .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .skill-category h4 { font-family: Arial, sans-serif; font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; color: #c9a84c; margin-bottom: 12px; }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .skill-tag { background: #111; border: 1px solid #2a2a2a; color: #ccc; font-family: Arial, sans-serif; font-size: 0.78rem; padding: 6px 12px; letter-spacing: 0.5px; }
+    .projects-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .project-card { background: #111; border: 1px solid #1e1e1e; padding: 28px; transition: border-color 0.2s; display: flex; flex-direction: column; }
     .project-card:hover { border-color: #c9a84c; }
-
-    .project-card .tag {
-      font-family: Arial, sans-serif;
-      font-size: 0.7rem;
-      color: #c9a84c;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 10px;
-    }
-
+    .project-card .tag { font-family: Arial, sans-serif; font-size: 0.7rem; color: #c9a84c; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; }
     .project-card h3 { font-size: 1.1rem; color: #fff; margin-bottom: 12px; }
-    .project-card p { color: #777; font-size: 0.88rem; line-height: 1.7; }
-
-    .exp-item {
-      margin-bottom: 36px;
-      padding-bottom: 36px;
-      border-bottom: 1px solid #1a1a1a;
-    }
-
+    .project-card p { color: #777; font-size: 0.88rem; line-height: 1.7; flex-grow: 1; }
+    .project-link { display: inline-block; margin-top: 16px; font-family: Arial, sans-serif; font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; color: #c9a84c; text-decoration: none; border-bottom: 1px solid #c9a84c; padding-bottom: 2px; width: fit-content; }
+    .project-link:hover { color: #fff; border-color: #fff; }
+    .exp-item { margin-bottom: 36px; padding-bottom: 36px; border-bottom: 1px solid #1a1a1a; }
     .exp-item:last-child { border-bottom: none; }
-
-    .exp-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 8px;
-    }
-
+    .exp-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
     .exp-header h3 { color: #fff; font-size: 1.05rem; }
-    .exp-header .date {
-      font-family: Arial, sans-serif;
-      font-size: 0.78rem;
-      color: #555;
-      letter-spacing: 1px;
-    }
-
-    .exp-org {
-      font-family: Arial, sans-serif;
-      font-size: 0.82rem;
-      color: #c9a84c;
-      margin-bottom: 10px;
-    }
-
+    .exp-header .date { font-family: Arial, sans-serif; font-size: 0.78rem; color: #555; letter-spacing: 1px; }
+    .exp-org { font-family: Arial, sans-serif; font-size: 0.82rem; color: #c9a84c; margin-bottom: 10px; }
     .exp-item ul { list-style: none; padding: 0; }
-
-    .exp-item ul li {
-      color: #777;
-      font-size: 0.88rem;
-      line-height: 1.7;
-      padding-left: 14px;
-      position: relative;
-      margin-bottom: 6px;
-    }
-
-    .exp-item ul li::before {
-      content: '—';
-      position: absolute;
-      left: 0;
-      color: #c9a84c;
-    }
-
-    .cert-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-    }
-
-    .cert-item {
-      background: #111;
-      border: 1px solid #1e1e1e;
-      padding: 20px 22px;
-    }
-
+    .exp-item ul li { color: #777; font-size: 0.88rem; line-height: 1.7; padding-left: 14px; position: relative; margin-bottom: 6px; }
+    .exp-item ul li::before { content: '—'; position: absolute; left: 0; color: #c9a84c; }
+    .cert-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .cert-item { background: #111; border: 1px solid #1e1e1e; padding: 20px 22px; }
     .cert-item p { color: #999; font-size: 0.88rem; line-height: 1.6; }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
-    }
-
-    .contact-item .clabel {
-      font-family: Arial, sans-serif;
-      font-size: 0.7rem;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: #555;
-      margin-bottom: 6px;
-    }
-
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+    .contact-item .clabel { font-family: Arial, sans-serif; font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; color: #555; margin-bottom: 6px; }
     .contact-item a, .contact-item p { color: #ccc; font-size: 0.95rem; text-decoration: none; }
     .contact-item a:hover { color: #c9a84c; }
-
-    footer {
-      text-align: center;
-      padding: 40px;
-      font-family: Arial, sans-serif;
-      font-size: 0.75rem;
-      color: #333;
-      letter-spacing: 1px;
-      border-top: 1px solid #1a1a1a;
-    }
-
-    @media (max-width: 640px) {
-      nav { padding: 16px 24px; }
-      .hero h1 { font-size: 2rem; }
-      .about-grid, .projects-grid, .cert-grid, .contact-grid { grid-template-columns: 1fr; }
-      .exp-header { flex-direction: column; gap: 4px; }
-    }
+    footer { text-align: center; padding: 40px; font-family: Arial, sans-serif; font-size: 0.75rem; color: #333; letter-spacing: 1px; border-top: 1px solid #1a1a1a; }
+    @media (max-width: 640px) { nav { padding: 16px 24px; } .hero h1 { font-size: 2rem; } .about-grid, .projects-grid, .cert-grid, .contact-grid, .skills-grid { grid-template-columns: 1fr; } .exp-header { flex-direction: column; gap: 4px; } }
   </style>
 </head>
 <body>
-
   <nav>
     <span class="logo">Ismael Seydi</span>
     <div>
       <a href="#about">About</a>
+      <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
-
   <div class="hero">
     <div class="hero-inner">
       <img src="headshot.jpg" alt="Ismael A. Seydi" class="headshot" />
       <h1>Ismael A. Seydi</h1>
       <p class="subtitle">Finance · Rutgers Business School · Class of 2027</p>
-      <p>Finance student, independent researcher, and builder — focused on the intersection of capital markets, brand strategy, and technology. Based in New Jersey.</p>
+      <p>Finance student, independent researcher, and builder dedicated to the intersection of capital markets, brand strategy, and technology.</p>
       <a href="2026-27_Fin._Resume.pdf" class="btn btn-solid" download>Download Resume</a>
       <a href="#projects" class="btn">View Work</a>
     </div>
   </div>
-
   <section id="about">
     <p class="section-label">Background</p>
     <h2>About Me</h2>
     <div class="about-grid">
       <p>I'm a Finance major at Rutgers Business School, transferring from Rowan College at Burlington County where I graduated on the Dean's List. My work spans financial analysis, brand strategy research, and full-stack development.<br><br>Outside the classroom I manage for the Rutgers Men's Basketball team, train Brazilian Jiu-Jitsu, and mentor first-generation students as a Peer Success Mentor at PRSI.</p>
       <div class="about-stats">
-        <div class="stat">
-          <div class="num">Bloomberg Certified</div>
-          <div class="label">BMC · BQL · Finance Fundamentals</div>
+        <div class="stat"><div class="num">Bloomberg Certified</div><div class="label">BMC · BQL · Finance Fundamentals</div></div>
+        <div class="stat"><div class="num">NJ Licensed</div><div class="label">Life · Health &amp; Accident Insurance Producer</div></div>
+        <div class="stat"><div class="num">BAASANA 2026</div><div class="label">Outstanding Presentation Award</div></div>
+        <div class="stat"><div class="num">Rutgers · RCBC</div><div class="label">B.S. Finance · A.S. Business Administration</div></div>
+      </div>
+    </div>
+  </section>
+  <section id="skills">
+    <p class="section-label">Capabilities</p>
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h4>Finance</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Financial Modeling</span>
+          <span class="skill-tag">Portfolio Analysis</span>
+          <span class="skill-tag">Bloomberg Terminal</span>
+          <span class="skill-tag">Market Research</span>
+          <span class="skill-tag">Investment Analysis</span>
         </div>
-        <div class="stat">
-          <div class="num">NJ Licensed</div>
-          <div class="label">Life · Health &amp; Accident Insurance Producer</div>
+      </div>
+      <div class="skill-category">
+        <h4>Technology</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">HTML/CSS</span>
+          <span class="skill-tag">GitHub</span>
+          <span class="skill-tag">Vercel</span>
         </div>
-        <div class="stat">
-          <div class="num">BAASANA 2026</div>
-          <div class="label">Outstanding Presentation Award</div>
-        </div>
-        <div class="stat">
-          <div class="num">Rutgers · RCBC</div>
-          <div class="label">B.S. Finance · A.S. Business Administration</div>
+      </div>
+      <div class="skill-category">
+        <h4>Business</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Brand Strategy</span>
+          <span class="skill-tag">Client Relations</span>
+          <span class="skill-tag">Data Analysis</span>
+          <span class="skill-tag">Research &amp; Writing</span>
+          <span class="skill-tag">Public Speaking</span>
         </div>
       </div>
     </div>
   </section>
-
   <section id="projects">
     <p class="section-label">Work</p>
     <h2>Projects</h2>
@@ -340,73 +141,52 @@
         <div class="tag">Research · Finance</div>
         <h3>Beyond the Wins: Brooklyn Nets Brand &amp; Revenue Strategy</h3>
         <p>Independent research analyzing franchise revenue, brand strategy, and business economics. Outstanding Presentation Award at BAASANA International Conference (April 2026). Manuscript submitted to IJBAS.</p>
+        <a href="BTW.html" target="_blank" class="project-link">View Project</a>
       </div>
       <div class="project-card">
-        <div class="tag">React · Vite · Vercel</div>
-        <h3>Greenlit — Application Tracker</h3>
-        <p>Full-stack opportunity tracker for managing job, internship, and scholarship applications. Custom status tracking, deadline urgency flags, activity logs, and CSV/JSON export. Deployed live on Vercel.</p>
+        <div class="tag">HTML · Game</div>
+        <h3>A+ Overgrowth — AI Study RPG</h3>
+        <p>Browser-based study game built in HTML, CSS, and JavaScript. Transforms course material into RPG-style quiz combat with boss mechanics and multi-world save architecture.</p>
+        <a href="A+ Overgrowth.html" target="_blank" class="project-link">Play Live</a>
       </div>
       <div class="project-card">
         <div class="tag">React · Claude API · Vercel</div>
-        <h3>A+ Overgrowth — AI Study RPG</h3>
-        <p>AI-powered study tool using the Claude API to transform course material into RPG-style quiz combat. Built boss mechanics, multi-world save architecture, and full battlefield staging system.</p>
+        <h3>Greenlit — Application Tracker</h3>
+        <p>Full-stack opportunity tracker for managing job, internship, and scholarship applications. Custom status tracking, deadline urgency flags, and CSV/JSON export.</p>
+        <a href="https://github.com/Ismael-17" target="_blank" class="project-link">View on GitHub</a>
       </div>
       <div class="project-card">
         <div class="tag">MySQL · Data</div>
         <h3>Student Club Database — MIS</h3>
         <p>Relational database schema in MySQL Workbench with three normalized tables, foreign key constraints, and four advanced JOIN queries for business intelligence reporting.</p>
+        <a href="https://github.com/Ismael-17" target="_blank" class="project-link">View on GitHub</a>
       </div>
     </div>
   </section>
-
   <section id="experience">
     <p class="section-label">Career</p>
     <h2>Experience</h2>
     <div class="exp-item">
-      <div class="exp-header">
-        <h3>Peer Success Mentor</h3>
-        <span class="date">Aug 2026 – Present</span>
-      </div>
+      <div class="exp-header"><h3>Peer Success Mentor</h3><span class="date">Aug 2026 – Present</span></div>
       <p class="exp-org">Paul Robeson Success Institute · Rutgers University</p>
-      <ul>
-        <li>Selected to mentor first-generation and historically excluded incoming students through workshops and one-on-one sessions.</li>
-        <li>Coordinated check-ins tracking mentee academic progress and connecting students to campus support services.</li>
-      </ul>
+      <ul><li>Selected to mentor first-generation and historically excluded incoming students through workshops and one-on-one sessions.</li><li>Coordinated check-ins tracking mentee academic progress and connecting students to campus support services.</li></ul>
     </div>
     <div class="exp-item">
-      <div class="exp-header">
-        <h3>Financial Advisor Intern</h3>
-        <span class="date">May 2024 – Sep 2024</span>
-      </div>
+      <div class="exp-header"><h3>Financial Advisor Intern</h3><span class="date">May 2024 – Sep 2024</span></div>
       <p class="exp-org">Northwestern Mutual Financial Services · Princeton, NJ</p>
-      <ul>
-        <li>Completed 100+ client outreach calls weekly and assisted managing 20+ personalized client portfolios.</li>
-        <li>Conducted competitive market research and insurance product comparisons supporting senior advisors.</li>
-        <li>Earned NJ Life and Health &amp; Accident Insurance Producer licenses during active client work.</li>
-      </ul>
+      <ul><li>Completed 100+ client outreach calls weekly and assisted managing 20+ personalized client portfolios.</li><li>Conducted competitive market research and insurance product comparisons supporting senior advisors.</li><li>Earned NJ Life and Health &amp; Accident Insurance Producer licenses during active client work.</li></ul>
     </div>
     <div class="exp-item">
-      <div class="exp-header">
-        <h3>Lodging Service Representative Intern</h3>
-        <span class="date">May 2022 – Aug 2022</span>
-      </div>
+      <div class="exp-header"><h3>Lodging Service Representative Intern</h3><span class="date">May 2022 – Aug 2022</span></div>
       <p class="exp-org">High Hotels Ltd. · Cherry Hill, NJ</p>
-      <ul>
-        <li>Collaborated with property manager on daily financial operations, front-desk accounting reconciliation, and reporting.</li>
-      </ul>
+      <ul><li>Collaborated with property manager on daily financial operations, front-desk accounting reconciliation, and reporting.</li></ul>
     </div>
     <div class="exp-item">
-      <div class="exp-header">
-        <h3>Event Operations Volunteer</h3>
-        <span class="date">Jun 2026</span>
-      </div>
+      <div class="exp-header"><h3>Event Operations Volunteer</h3><span class="date">Jun 2026</span></div>
       <p class="exp-org">Senegal Rek 2026 — Business &amp; Investment Forum · Rutgers University</p>
-      <ul>
-        <li>Supported an international forum convening institutional investors, private equity firms, diaspora leaders, and government officials during FIFA World Cup 2026.</li>
-      </ul>
+      <ul><li>Supported an international forum convening institutional investors, private equity firms, diaspora leaders, and government officials during FIFA World Cup 2026.</li></ul>
     </div>
   </section>
-
   <section id="certifications">
     <p class="section-label">Credentials</p>
     <h2>Licenses &amp; Certifications</h2>
@@ -419,33 +199,16 @@
       <div class="cert-item"><p>CitiBank Investment Banking Virtual Experience<br><span style="color:#555;font-size:0.8rem;">Forage · 2023</span></p></div>
     </div>
   </section>
-
   <section id="contact">
     <p class="section-label">Connect</p>
     <h2>Contact</h2>
     <div class="contact-grid">
-      <div class="contact-item">
-        <p class="clabel">Email</p>
-        <a href="mailto:ismseydi@gmail.com">ismseydi@gmail.com</a>
-      </div>
-      <div class="contact-item">
-        <p class="clabel">LinkedIn</p>
-        <a href="https://linkedin.com/in/ismaelseydi" target="_blank">linkedin.com/in/ismaelseydi</a>
-      </div>
-      <div class="contact-item">
-        <p class="clabel">Phone</p>
-        <p>(609) 218-3421</p>
-      </div>
-      <div class="contact-item">
-        <p class="clabel">ORCID</p>
-        <a href="https://orcid.org/0009-0007-0709-2613" target="_blank">0009-0007-0709-2613</a>
-      </div>
+      <div class="contact-item"><p class="clabel">Email</p><a href="mailto:ismseydi@gmail.com">ismseydi@gmail.com</a></div>
+      <div class="contact-item"><p class="clabel">LinkedIn</p><a href="https://linkedin.com/in/ismaelseydi" target="_blank">linkedin.com/in/ismaelseydi</a></div>
+      <div class="contact-item"><p class="clabel">Phone</p><p>(609) 218-3421</p></div>
+      <div class="contact-item"><p class="clabel">GitHub</p><a href="https://github.com/Ismael-17" target="_blank">github.com/Ismael-17</a></div>
     </div>
   </section>
-
-  <footer>
-    &copy; 2026 Ismael A. Seydi &nbsp;·&nbsp; Rutgers Business School
-  </footer>
-
+  <footer>&copy; 2026 Ismael A. Seydi &nbsp;·&nbsp; Rutgers Business School</footer>
 </body>
 </html>
